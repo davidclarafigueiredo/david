@@ -39,7 +39,7 @@ const projects = [
     highlights: ['Service auf Go und Fiber migrieren', 'Bereitstellung auf Kubernetes in AWS', 'Bestehende Abläufe und Schnittstellen weiterführen'],
   },
   {
-    id: 'bestreads',
+    id: 'Bestreads',
     title: 'Eine Goodreads Alternative für Bücherliebhaber',
     client: 'Hochschulprojekt · Product Owner / Entwickler',
     technologies: ['Go', 'Fiber', 'Self-Hosting', 'OpenLibrary'],
