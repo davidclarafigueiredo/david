@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import projectListPdf from './assets/Projektliste.pdf'
 
 const menuOpen = ref(false)
 const closeMenu = () => { menuOpen.value = false }
@@ -39,7 +38,7 @@ const projects = [
     highlights: ['Service auf Go und Fiber migrieren', 'Bereitstellung auf Kubernetes in AWS', 'Bestehende Abläufe und Schnittstellen weiterführen'],
   },
   {
-    id: 'Bestreads',
+    id: 'bestreads',
     title: 'Eine Goodreads Alternative für Bücherliebhaber',
     client: 'Hochschulprojekt · Product Owner / Entwickler',
     technologies: ['Go', 'Fiber', 'Self-Hosting', 'OpenLibrary'],
@@ -67,14 +66,15 @@ const toggleProject = (id: string) => {
     <section id="top" class="hero section-shell">
       <div class="hero-copy">
         <p class="eyebrow"><span class="status-dot"></span> Verfügbar für neue Projekte</p>
-        <h1>Hallo, ich bin <em>David.</em><br />Ich mache Ideen sichtbar.</h1>
-        <p class="intro">Kreativer Kopf mit einem Faible für klare Gestaltung, gute digitale Erlebnisse und Dinge, die einen Unterschied machen.</p>
+        <h1><em>David Clara Figueiredo</em><br />Softwareentwickler</h1>
+        <p class="intro">Studierter Informatiker mit Leidenschaft für moderne Backend-Entwicklung.</p>
         <div class="hero-actions"><a class="button button-primary" href="#projekte">Meine Arbeit <span>↓</span></a><a class="text-link" href="#ueber-mich">Mehr über mich <span>↗</span></a></div>
       </div>
-      <div class="hero-art" aria-label="Abstrakte geometrische Illustration">
+      <div class="hero-image"><img class="me"src="/src/assets/me.jpeg" alt="David" /></div>
+<!--       <div class="hero-art" aria-label="Abstrakte geometrische Illustration">
         <div class="arch arch-one"></div><div class="arch arch-two"></div><div class="sun"></div><div class="ground-line"></div>
-        <p class="art-note">based in<br /><strong>Germany</strong></p><p class="art-year">2024—<br />FOREVER</p>
-      </div>
+        <p class="art-note">based in<br /><strong>Germany</strong></p><p class="art-year">20<br />FOREVER</p>
+      </div> -->
     </section>
 
     <section id="ueber-mich" class="about section-shell">
@@ -103,12 +103,12 @@ const toggleProject = (id: string) => {
           </div>
         </article>
       </div>
-      <a class="project-list-link" :href="projectListPdf" target="_blank" rel="noopener">Komplette Projektliste öffnen <span>↗</span></a>
+      <!-- <a class="project-list-link" :href="projectListPdf" target="_blank" rel="noopener">Komplette Projektliste öffnen <span>↗</span></a> -->
     </section>
 
     <section id="kontakt" class="contact section-shell">
-      <p class="section-label">03 / KONTAKT</p><div class="contact-content"><h2>Lass uns etwas<br /><em>Schlechtes machen.</em></h2><a class="mail-link" href="mailto:hallo@david.de">hallo@david.de <span>↗</span></a></div>
-      <div class="contact-footer"><p>© 2024 David</p><div><a href="#top">LinkedIn</a><a href="#top">Instagram</a></div></div>
+      <p class="section-label">03 / KONTAKT</p><div class="contact-content"><h2>Jederzeit erreichbar</h2><a class="mail-link" href="mailto:david.clara.figueiredo@gmail.com">david.clara.figueiredo@gmail.com <span>↗</span></a></div>
+      <div class="contact-footer"><p>© 2026 David</p><div><a href="https://www.linkedin.com/in/david-clara-figueiredo/">LinkedIn</a></div></div>
     </section>
   </main>
 </template>
