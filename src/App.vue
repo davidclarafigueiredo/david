@@ -38,12 +38,20 @@ const projects = [
     highlights: ['Service auf Go und Fiber migrieren', 'Bereitstellung auf Kubernetes in AWS', 'Bestehende Abläufe und Schnittstellen weiterführen'],
   },
   {
+    id: 'sau-portal',
+    title: 'Universitätsportal für Studierende und Lehrende',
+    client: 'Hochschulprojekt · Entwickler',
+    technologies: ['Spring Boot', 'Keycloak', 'User Management', 'Java', 'REST'],
+    summary: 'Entwicklung eines universitätsweiten Portals für Studierende und Lehrende – spezialisiert auf User-Management, Authentifizierung und Berechtigungen.',
+    highlights: ['Keycloak-Integration', 'Schnittstellen anbieten', 'Mantainer für Spring Boot backends'],
+  },
+  {
     id: 'bestreads',
-    title: 'Eine Goodreads Alternative für Bücherliebhaber',
+    title: ' Goodreads Alternative für Bücherliebhaber',
     client: 'Hochschulprojekt · Product Owner / Entwickler',
     technologies: ['Go', 'Fiber', 'Self-Hosting', 'OpenLibrary'],
     summary: 'Entwicklung einer Goodreads-Alternative für Bücherliebhaber – inklusive Bereitstellung auf einem Self-Hosting-Server.',
-    highlights: ['Service auf Go und Fiber migrieren', 'Bereitstellung auf Self-Hosting-Server', 'Bestehende Abläufe und Schnittstellen weiterführen'],
+    highlights: ['Konnektivität und Integration', 'Bereitstellung auf Self-Hosting-Server', 'REST-Schnittstellen zwischen Frontend und Backend abstimmen'],
   },
 ]
 
