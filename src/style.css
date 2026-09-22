@@ -113,14 +113,24 @@ nav > a:hover::after {
 .eyebrow {
   display: flex;
   align-items: center;
-  gap: 8px;
-  color: #60605a;
+  width: fit-content;
+  gap: 9px;
+  padding: 8px 11px;
+  color: #176b37;
+  background: #e5f4e9;
+  border: 1px solid #b9dfc4;
+  border-radius: 99px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .06em;
 }
 .status-dot {
-  width: 7px;
-  height: 7px;
-  background: #de5e43;
+  width: 9px;
+  height: 9px;
+  flex: 0 0 9px;
+  background: #1c9a4c;
   border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(28, 154, 76, .16);
 }
 h1, h2, h3, p {
   margin-top: 0;
