@@ -17,7 +17,10 @@ export const siteContent = {
     backToHome: 'Zur Startseite',
   },
   hero: {
-    availability: 'Verfügbar für neue Projekte',
+    // Auf `false` setzen, wenn keine neuen Projekte angenommen werden.
+    isAvailable: false,
+    availableLabel: 'Verfügbar für neue Projekte',
+    unavailableLabel: 'Derzeit nicht verfügbar',
     role: 'Softwareentwickler',
     intro: 'Studierter Informatiker mit Leidenschaft für moderne Backend-Entwicklung.',
     projectsLink: 'Meine Arbeit',

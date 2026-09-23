@@ -5,6 +5,12 @@ import { siteContent } from './content'
 const menuOpen = ref(false)
 const closeMenu = () => { menuOpen.value = false }
 
+const availabilityLabel = computed(() => (
+  siteContent.hero.isAvailable
+    ? siteContent.hero.availableLabel
+    : siteContent.hero.unavailableLabel
+))
+
 const activeProject = ref<string | null>(null)
 const toggleProject = (id: string) => {
   activeProject.value = activeProject.value === id ? null : id
@@ -48,7 +54,7 @@ onUnmounted(() => window.removeEventListener('hashchange', syncLegalPage))
     <template v-if="!legalPage">
     <section id="top" class="hero section-shell">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot"></span> {{ siteContent.hero.availability }}</p>
+        <p class="eyebrow" :class="{ unavailable: !siteContent.hero.isAvailable }"><span class="status-dot"></span> {{ availabilityLabel }}</p>
         <h1><em>{{ siteContent.person.name }}</em><br />{{ siteContent.hero.role }}</h1>
         <p class="intro">{{ siteContent.hero.intro }}</p>
         <div class="hero-actions"><a class="button button-primary" href="#projekte">{{ siteContent.hero.projectsLink }} <span>↓</span></a><a class="text-link" href="#ueber-mich">{{ siteContent.hero.aboutLink }} <span>↗</span></a></div>

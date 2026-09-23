@@ -132,6 +132,15 @@ nav > a:hover::after {
   border-radius: 50%;
   box-shadow: 0 0 0 4px rgba(28, 154, 76, .16);
 }
+.eyebrow.unavailable {
+  color: #8a3c18;
+  background: #fff0e7;
+  border-color: #f0c5ae;
+}
+.eyebrow.unavailable .status-dot {
+  background: #d5612b;
+  box-shadow: 0 0 0 4px rgba(213, 97, 43, .16);
+}
 h1, h2, h3, p {
   margin-top: 0;
 }
